@@ -59,5 +59,7 @@ We will evaluate the performance of these models and make a recommendation on wh
  The high_risk precision is about 100%  with 100% sensitivity which makes a F1 of 100% .
  Due to the high number of the low_risk population, its precision is 100% with a sensitivity of 100%.
  
-Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.There is a summary of the results (2 pt)
-There is a recommendation on which model to use, or there is no recommendation with a justification (3 pt)
+#### Summary:
+In the first four models we undersampled, oversampled and did a combination of both to try and determine, which model is best at predicting which loans are on highest risk. The next two models we resampled the data using ensemble classifiers to try and predict which loans are on high or low risk. In our first four models our accuracy score is not as high as the ensemble classifiers and the recall in the oversampling/undersampling/mixed models are low as well.
+
+Typically, in your models you want a good balance of recall and precision which is why I recommend the ensemble classifiers over the first four models. It appears that the Easy Ensemble had the best balance of all the models because of it's high accuracy score and good balance of precision and recall scores.
